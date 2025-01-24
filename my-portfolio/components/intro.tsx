@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Intro() {
   return (
-    <section>
+    <section className='mb-28 max-w-[50rem] mx-auto text-center sm:mb-0'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
@@ -26,11 +26,23 @@ export default function Intro() {
             className='absolute bottom-0 right-0  text-4xl'
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: 'tween', delay: 0.3, duration: 0.3 }}>
-            🏆
-          </motion.span>
+            transition={{
+              type: 'tween',
+              delay: 0.3,
+              duration: 0.5,
+            }}></motion.span>
         </div>
       </div>
+      <motion.p
+        className='mb-10 mt-4 px-4 text-2xl font-light !leading-[1.5] sm:text-4xl'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}>
+        <span className='font-bold'>Hey, I'm Sam </span>I am a{' '}
+        <span className='font-bold'>full-stack web developer</span> with{' '}
+        <span className='font-bold'>5</span> years of experience bringing
+        feature rich and user-friendly{' '}
+        <span className='italic'>web applications</span> to life.
+      </motion.p>
     </section>
   );
 }
