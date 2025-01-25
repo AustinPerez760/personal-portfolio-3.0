@@ -38,7 +38,7 @@ export default function Intro() {
 				</div>
 			</div>
 
-			<motion.p
+			<motion.h1
 				className='mb-10 mt-4 px-4 text-2xl font-light !leading-[1.5] sm:text-4xl'
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}>
@@ -47,7 +47,7 @@ export default function Intro() {
 				<span className='font-bold'>5</span> years of experience bringing
 				feature rich and user-friendly{' '}
 				<span className='italic'>web applications</span> to life.
-			</motion.p>
+			</motion.h1>
 
 			<motion.div
 				className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
@@ -70,12 +70,18 @@ export default function Intro() {
 					<HiDownload className='opacity-60 group-hover:translate-y-1 transition' />{' '}
 				</a>
 
-				<a className='bg-white p-4 text-gray-700 flex items-center gap-2 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer rounded-full border border-black/10'>
+				<a
+					className='bg-white p-4 text-gray-700 flex items-center gap-2 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer rounded-full border border-black/10'
+					href='https://www.linkedin.com/in/austin-perez3'
+					target='_blank'>
 					{' '}
 					<BsLinkedin />
 				</a>
 
-				<a className='bg-white p-4 text-gray-700 flex items-center gap-2 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer text-[1.35rem] rounded-full border border-black/10'>
+				<a
+					className='bg-white p-4 text-gray-700 flex items-center gap-2 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer text-[1.35rem] rounded-full border border-black/10'
+					href='https://github.com/AustinPerez760'
+					target='_blank'>
 					{' '}
 					<FaGithubSquare />
 				</a>
