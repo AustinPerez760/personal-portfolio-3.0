@@ -1,17 +1,16 @@
 'use client';
-
+import type { SectionName } from '@/lib/types';
 import React, { useState, createContext, useContext } from 'react';
-import { links } from '@/lib/data';
-
-type sectionName = (typeof links)[number]['name'];
 
 type ActiveSectionContextProviderProps = {
 	children: React.ReactNode;
 };
 
 type ActiveSectionContextType = {
-	activeSection: sectionName;
-	setActiveSection: React.Dispatch<React.SetStateAction<sectionName>>;
+	activeSection: SectionName;
+	setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+	timeOfLastClick: number;
+	setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 export const ActiveSectionContext =
@@ -20,13 +19,16 @@ export const ActiveSectionContext =
 export default function ActiveSectionContextProvider({
 	children,
 }: ActiveSectionContextProviderProps) {
-	const [activeSection, setActiveSection] = useState<sectionName>('Home');
+	const [activeSection, setActiveSection] = useState<SectionName>('Home');
+	const [timeOfLastClick, setTimeOfLastClick] = useState(0); // This keeps track in order to disbale the oberver temporarily when link is clicked
 
 	return (
 		<ActiveSectionContext.Provider
 			value={{
 				activeSection,
 				setActiveSection,
+				timeOfLastClick,
+				setTimeOfLastClick,
 			}}>
 			{children}
 		</ActiveSectionContext.Provider>
