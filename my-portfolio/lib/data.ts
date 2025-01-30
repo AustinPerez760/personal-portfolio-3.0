@@ -1,6 +1,5 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import corpcommentImg from '../public/images/corpcomment.png';
 import rmtdevImg from '../public/images/rmtdev.png';
@@ -35,28 +34,44 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: 'Graduated bootcamp',
-		location: 'Miami, FL',
+		title: 'Full-Stack Engineer',
+		location: 'Juno Beach, FL',
 		description:
-			'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-		icon: React.createElement(LuGraduationCap),
-		date: '2019',
-	},
-	{
-		title: 'Front-End Developer',
-		location: 'Orlando, FL',
-		description:
-			'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+			'I worked as a full-stack engineer for the pricing and estimations division of NextEra Energy. A fortune 100 sustainable energy company. ',
 		icon: React.createElement(CgWorkAlt),
-		date: '2019 - 2021',
+		date: '2024',
 	},
 	{
-		title: 'Full-Stack Developer',
+		title: 'Full-Stack Web Developer',
+		location: 'Remote',
+		description:
+			'I am currently a full-stack web developer who works on a variety of projects. I have relevent experience in both front-end and back-end development.',
+		icon: React.createElement(CgWorkAlt),
+		date: '2019 - Present',
+	},
+	{
+		title: 'Software Tester II',
+		location: 'San Diego, CA',
+		description:
+			'I worked as a systems software tester for the Tandem Source web applications launched in both the U.S and Canada. Focusing on both R&D, automation, and production software.',
+		icon: React.createElement(CgWorkAlt),
+		date: '2022 - 2024',
+	},
+	{
+		title: 'Software Tester I',
 		location: 'Houston, TX',
 		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-		icon: React.createElement(FaReact),
-		date: '2021 - present',
+			'I worked as a systems software tester preforming and writing manual code tests for digital health systems software in accordance with company software development lifecycles and FDA guidelines.',
+		icon: React.createElement(CgWorkAlt),
+		date: '2021 - 2022',
+	},
+	{
+		title: 'University of California San Diego',
+		location: 'San Diego, CA',
+		description:
+			'I completed a 6 month project focused bootcamp where I focused on full-srtack engineering and web development.',
+		icon: React.createElement(LuGraduationCap),
+		date: '2021 - 2022',
 	},
 ] as const;
 

@@ -17,17 +17,18 @@ export default function About() {
 			id='about'>
 			<SectionHeading>About me</SectionHeading>
 			<p className='mb-3'>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum fuga,
-				veritatis ipsum vitae id quibusdam repellat dignissimos nihil temporibus
-				culpa magnam unde molestias, illum perspiciatis, velit non quis
-				voluptate amet aspernatur eos tempore officia necessitatibus?
-				Praesentium officiis, quasi error, ipsum rem autem debitis, eos illum
-				iusto unde quo odit. Sapiente.
+				From fortune 100 companies to startups, and independent clients acorss
+				the country I have been fortunate to work with a diverse range of
+				clients and technologies. My focus has been consistent throught my
+				journey as a web developer, to deliver high quality, performance driven
+				and accessible web based projects to share with the world. I have a
+				constant willingness to learn and collaborate with others to create the
+				best possible product. I am always looking for new opportunities to grow
+				and the next great team to be apart of.
 			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-				harum eaque sed autem officiis sint aliquam perferendis vitae, libero
-				iure!
+			<p className='font-semibold italic'>
+				“Every great developer you know got there by solving problems they were
+				unqualified to solve until they actually did it.” - Patrick McKenzie
 			</p>
 		</motion.section>
 	);
