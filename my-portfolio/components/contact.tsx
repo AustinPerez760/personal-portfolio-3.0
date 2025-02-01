@@ -38,7 +38,7 @@ export default function Contact() {
 					name='senderEmail'
 					type='email'
 					required
-					maxLength={300}
+					maxLength={100}
 					placeholder='Your Email'
 				/>
 				<textarea
@@ -46,7 +46,7 @@ export default function Contact() {
 					name='message'
 					placeholder='Your Message'
 					required
-					maxLength={300}
+					maxLength={500}
 				/>
 				<button
 					type='submit'
