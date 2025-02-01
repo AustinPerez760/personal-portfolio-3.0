@@ -34,12 +34,12 @@ export default function Contact() {
 					sendEmail(formData);
 				}}>
 				<input
-					className='h-14 rounded-lg borderBlack'
+					className='h-14 rounded-lg borderBlack p-4'
 					name='senderEmail'
 					type='email'
 					required
 					maxLength={300}
-					placeholder='your emal'
+					placeholder='Your Email'
 				/>
 				<textarea
 					className='h-52 my-3 rounded-lg borderBlack p-4'
