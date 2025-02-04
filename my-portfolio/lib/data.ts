@@ -39,7 +39,7 @@ export const experiencesData = [
 		description:
 			'I worked as a full-stack engineer for the pricing and estimations division of NextEra Energy. A fortune 100 sustainable energy company. ',
 		icon: React.createElement(CgWorkAlt),
-		date: '2024',
+		date: '2024-2025',
 	},
 	{
 		title: 'Full-Stack Web Developer',
@@ -50,8 +50,16 @@ export const experiencesData = [
 		date: '2019 - Present',
 	},
 	{
+		title: 'Software Consultant',
+		location: 'San Diego CA',
+		description:
+			'I held the role of Software Consultant for Global Flow Cycling during the companies early planning and development stages.',
+		icon: React.createElement(CgWorkAlt),
+		date: '2024 - 2025',
+	},
+	{
 		title: 'Software Tester II',
-		location: 'San Diego, CA',
+		location: 'Remote, TX',
 		description:
 			'I worked as a systems software tester for the Tandem Source web applications launched in both the U.S and Canada. Focusing on both R&D, automation, and production software.',
 		icon: React.createElement(CgWorkAlt),
@@ -59,7 +67,7 @@ export const experiencesData = [
 	},
 	{
 		title: 'Software Tester I',
-		location: 'Houston, TX',
+		location: 'San Diego, CA',
 		description:
 			'I worked as a systems software tester preforming and writing manual code tests for digital health systems software in accordance with company software development lifecycles and FDA guidelines.',
 		icon: React.createElement(CgWorkAlt),
