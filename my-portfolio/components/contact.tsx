@@ -15,14 +15,14 @@ export default function Contact() {
 		<motion.section
 			id='contact'
 			ref={ref}
-			className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+			className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center '
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}
 			viewport={{ once: true }}>
 			<SectionHeading>Contact me</SectionHeading>
 
-			<p className='text-gray-800 -mt-7'>
+			<p className='text-gray-800 -mt-7 dark:text-white'>
 				Please constact me directly at{' '}
 				<a className='underline' href=''>
 					austinperezwebdev@gmai.com

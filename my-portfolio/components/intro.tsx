@@ -32,7 +32,7 @@ export default function Intro() {
 							height='165' // 195px
 							quality='95'
 							priority={true}
-							className='h-34 w-34 rounded-full border-[0.35rem] border-white shadow-xl'></Image>
+							className='h-34 w-34 rounded-full border-[0.35rem] border-white shadow-xl dark:border-black'></Image>
 					</motion.div>
 					<motion.span
 						className='absolute bottom-0 right-0  text-4xl'
@@ -59,12 +59,12 @@ export default function Intro() {
 
 			<motion.div
 				className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
-				initial={{ opacity: 0, y: 100 }}
+				initial={{ opacity: 0, y: 900 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ delay: 0.1 }}>
 				<Link
 					href='#contact'
-					className=' group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+					className=' group bg-slate-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:hover:bg-slate-500 dark:bg-slate-800  dark:text-white'
 					onClick={() => {
 						setActiveSection('Contact');
 						setTimeOfLastClick(Date.now());
@@ -75,7 +75,7 @@ export default function Intro() {
 				</Link>
 
 				<a
-					className=' group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10'
+					className=' group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:text-black dark:opacity-800'
 					href='/CV.pdf'
 					download>
 					Download CV{' '}

@@ -16,7 +16,7 @@ export default function About() {
 			transition={{ delay: 0.2 }}
 			id='about'>
 			<SectionHeading>About me</SectionHeading>
-			<p className='mb-3'>
+			<p className='mb-3 dark:text-white'>
 				From fortune 100 companies to startups, and independent clients acorss
 				the country I have been fortunate to work with a diverse range of
 				clients and technologies. My focus has been consistent throught my
